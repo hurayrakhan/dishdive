@@ -11,7 +11,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     // Fetch all recipes
-    fetch('https://your-api.com/recipes') // Replace with your backend endpoint
+    fetch('https://assignment-10-server-lime-beta.vercel.app/recipes') // Replace with your backend endpoint
       .then(res => res.json())
       .then(data => {
         setAllRecipes(data);
@@ -28,7 +28,7 @@ const Dashboard = () => {
     <div className="flex min-h-screen bg-gray-100">
       {/* Sidebar */}
       <aside className="w-64 bg-white shadow-lg p-6 space-y-4">
-        <h2 className="text-2xl font-bold text-green-600">DishDive</h2>
+        <Link to={'/'}><h2 className="text-2xl font-bold text-green-600">DishDive</h2></Link>
         <p className="text-gray-500 mb-4">{user?.displayName || 'User'}</p>
         <nav className="space-y-2">
           <Link to="/" className="block p-2 rounded hover:bg-gray-100 text-gray-700">← Back to Home</Link>
@@ -40,7 +40,7 @@ const Dashboard = () => {
 
       {/* Main Dashboard */}
       <main className="flex-1 p-6">
-        <h1 className="text-4xl font-bold text-green-600 mb-10">
+        <h1 className="text-4xl font-bold text-green-600 mb-10 mt-10">
           Welcome, {user?.displayName || 'User'} 👋
         </h1>
 

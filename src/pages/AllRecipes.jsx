@@ -3,6 +3,7 @@ import { FaHeart, FaStar, FaInfoCircle } from 'react-icons/fa';
 import Header from '../Components/Header/Header';
 import { useLoaderData, useNavigate } from 'react-router';
 import { Fade } from 'react-awesome-reveal';
+import Footer from '../Components/Footer';
 
 const AllRecipes = () => {
     const initialRecipes = useLoaderData();
@@ -205,6 +206,7 @@ const AllRecipes = () => {
                         </div>
                     </div>
                 </div>
+                <Footer></Footer>
             </Header>
 
         </div>

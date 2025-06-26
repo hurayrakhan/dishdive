@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import Header from "../Components/Header/Header";
+import Footer from "../Components/Footer";
 
 export default function Profile() {
     const { user } = useContext(AuthContext);
@@ -105,6 +106,7 @@ export default function Profile() {
                         )}
                     </div>
                 </div>
+                <Footer></Footer>
             </Header>
 
         </div>

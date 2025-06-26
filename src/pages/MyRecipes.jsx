@@ -4,6 +4,7 @@ import { AuthContext } from "../Provider/AuthProvider";
 import Header from "../Components/Header/Header";
 import { Link } from "react-router";
 import { Fade } from "react-awesome-reveal";
+import Footer from "../Components/Footer";
 
 export default function MyRecipes() {
     const { user } = useContext(AuthContext);
@@ -146,7 +147,7 @@ export default function MyRecipes() {
                         </div>
                     )}
                 </div>
-
+                <Footer></Footer>
             </Header>
 
         </div>

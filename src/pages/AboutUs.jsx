@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../Components/Header/Header';
+import Footer from '../Components/Footer';
 
 const teamsData = [
     {
@@ -67,6 +68,7 @@ const AboutUs = () => {
                         </div>
                     </section>
                 </div>
+                <Footer></Footer>
             </Header>
 
         </div>

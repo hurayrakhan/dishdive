@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../Components/Header/Header';
 import { Outlet } from 'react-router';
-import Footer from '../Components/Footer';
 import { Bounce, ToastContainer } from 'react-toastify';
 
 const Root = () => {
@@ -9,7 +8,7 @@ const Root = () => {
         <>
 
             <Outlet></Outlet>
-            <Footer></Footer>
+            
             <ToastContainer
                 position="top-right"
                 autoClose={5000}

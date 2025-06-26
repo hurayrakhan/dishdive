@@ -4,6 +4,7 @@ import Header from '../Components/Header/Header';
 import TopRecipes from '../Components/TopRecipes';
 import Newsletter from '../Components/Newsletter';
 import UpcomingRecipes from '../Components/UpcomingRecipes';
+import Footer from '../Components/Footer';
 
 const HomePage = () => {
     return (
@@ -16,6 +17,7 @@ const HomePage = () => {
                 <TopRecipes></TopRecipes>
                 <UpcomingRecipes></UpcomingRecipes>
                 <Newsletter></Newsletter>
+                <Footer></Footer>
             </Header>
 
 
