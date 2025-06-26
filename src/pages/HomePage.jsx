@@ -5,6 +5,7 @@ import TopRecipes from '../Components/TopRecipes';
 import Newsletter from '../Components/Newsletter';
 import UpcomingRecipes from '../Components/UpcomingRecipes';
 import Footer from '../Components/Footer';
+import Blog from '../Components/Blog';
 
 const HomePage = () => {
     return (
@@ -16,6 +17,7 @@ const HomePage = () => {
                 </div>
                 <TopRecipes></TopRecipes>
                 <UpcomingRecipes></UpcomingRecipes>
+                <Blog></Blog>
                 <Newsletter></Newsletter>
                 <Footer></Footer>
             </Header>
