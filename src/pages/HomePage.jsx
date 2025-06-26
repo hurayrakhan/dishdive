@@ -8,15 +8,17 @@ import UpcomingRecipes from '../Components/UpcomingRecipes';
 const HomePage = () => {
     return (
         <div className=''>
-            <div className='sticky backdrop-blur-sm top-0  z-50 w-full'>
-                <Header></Header>
-            </div>
-            <div className='-mt-16'>
-                <Hero></Hero>
-            </div>
-            <TopRecipes></TopRecipes>
-            <UpcomingRecipes></UpcomingRecipes>
-            <Newsletter></Newsletter>
+
+            <Header>
+                <div className='-mt-16'>
+                    <Hero></Hero>
+                </div>
+                <TopRecipes></TopRecipes>
+                <UpcomingRecipes></UpcomingRecipes>
+                <Newsletter></Newsletter>
+            </Header>
+
+
         </div>
     );
 };
