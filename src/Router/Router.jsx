@@ -13,6 +13,7 @@ import RecipeDetails from "../pages/RcipeDetails";
 import PrivateRouter from "./PrivateRouter";
 import Profile from "../pages/Profile";
 import { Suspense } from "react";
+import Dashboard from "../pages/Dashboard";
 
 
 const router = createBrowserRouter([
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
             {
                 path: "/profile",
                 element: <PrivateRouter><Profile></Profile></PrivateRouter>
+            },
+            {
+                path: '/dashboard',
+                element: <PrivateRouter><Dashboard></Dashboard></PrivateRouter>
             }
         ]
     },
