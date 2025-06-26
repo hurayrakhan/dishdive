@@ -53,7 +53,7 @@ const Blog = () => {
               <p className="text-gray-700 mb-4 flex-grow">{blog.description.slice(0, 120)}...</p>
               <button
                 onClick={() => handleReadMore(blog.id)}
-                className="mt-auto self-start px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition"
+                className="mt-auto self-start btn btn-outline text-green-600  rounded hover:bg-green-700 hover:text-white transition "
               >
                 Read More →
               </button>

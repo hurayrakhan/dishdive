@@ -45,7 +45,7 @@ export default function TopRecipes() {
                                 </p>
                                 <button
                                     onClick={() => navigate(`/recipes/${recipe._id}`)}
-                                    className="bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700 transition"
+                                    className="btn btn-outline text-green-600  px-5 py-2 rounded-lg hover:bg-green-700 hover:text-white transition"
                                 >
                                     View Details
                                 </button>
@@ -58,7 +58,7 @@ export default function TopRecipes() {
                 <div className="text-center mt-12">
                     <button
                         onClick={() => navigate("/allRecipes")}
-                        className="bg-gray-800 text-white px-8 py-3 rounded-lg hover:bg-gray-900 transition"
+                        className="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition"
                     >
                         See All Recipes
                     </button>
