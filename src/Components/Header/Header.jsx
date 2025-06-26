@@ -40,7 +40,7 @@ const Header = ({ children }) => {
                     to={'/'}
                     className={({ isActive }) =>
                         isActive
-                            ? 'border border-green-600 rounded text-gray-300 font-bold'
+                            ? 'border border-green-600 rounded text-gray-300 font-bold '
                             : 'hover:bg-transparent hover:text-gray-300 text-green-600'
                     }
                     onClick={() => setSidebarOpen(false)}
@@ -109,7 +109,7 @@ const Header = ({ children }) => {
         <>
             {/* Sidebar */}
             <div
-                className={`fixed top-0 left-0 h-screen w-64 bg-white shadow-lg z-50 transform transition-transform duration-300 ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'
+                className={`fixed top-0 left-0 h-screen w-64 bg-white shadow-lg z-50 transform transition-transform duration-300 overflow-scroll ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'
                     }`}
             >
                 <div className="p-6 flex flex-col h-full">
@@ -208,11 +208,11 @@ const Header = ({ children }) => {
                 <div className="navbar backdrop-blur-sm sticky top-0 z-40 w-full bg-white/30 border-b border-gray-200">
                     <div className="navbar-start flex items-center gap-2 px-4">
                         <div
-                            className="flex items-center gap-2 cursor-pointer"
+                            className={`flex items-center gap-2 cursor-pointer ${sidebarOpen? 'hidden' : ''}`}
                             onClick={() => setSidebarOpen(true)}
                         >
                             <img src={logo} alt="DishDive Logo" className="h-10 w-auto" />
-                            <p className="font-bold text-2xl text-green-600 relative hidden lg:block">
+                            <p className="font-bold text-2xl text-gray-300 relative hidden lg:block">
                                 Dish
                                 <span className="absolute top-2 left-full ml-1 text-3xl text-green-500">Dive</span>
                             </p>

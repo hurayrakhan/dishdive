@@ -27,7 +27,7 @@ const Dashboard = () => {
   return (
     <div className="flex min-h-screen bg-gray-100">
       {/* Sidebar */}
-      <aside className="w-64 bg-white shadow-lg p-6 space-y-4">
+      <aside className="w-38 md:w-64 bg-white shadow-lg p-6 space-y-4">
         <Link to={'/'}><h2 className="text-2xl font-bold text-green-600">DishDive</h2></Link>
         <p className="text-gray-500 mb-4">{user?.displayName || 'User'}</p>
         <nav className="space-y-2">
