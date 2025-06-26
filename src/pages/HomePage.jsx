@@ -8,7 +8,7 @@ import UpcomingRecipes from '../Components/UpcomingRecipes';
 const HomePage = () => {
     return (
         <div className=''>
-            <div className='sticky backdrop-blur-sm text-gray-300 top-0  z-50 w-full'>
+            <div className='sticky backdrop-blur-sm top-0  z-50 w-full'>
                 <Header></Header>
             </div>
             <div className='-mt-16'>

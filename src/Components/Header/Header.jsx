@@ -37,18 +37,18 @@ const Header = () => {
 
     const links = <>
 
-        <li className='font-semibold'><NavLink to={'/'} className={({ isActive }) => isActive ? 'border border-green-600 rounded text-green-600 font-bold  ' : ' hover:border-green-600 hover:border hover:text-green-600'}>Home</NavLink></li>
-        <li className='font-semibold'><NavLink to={'/allRecipes'} className={({ isActive }) => isActive ? 'border border-green-600 rounded text-green-600 font-bold  ' : ' hover:border-green-600 hover:border hover:text-green-600'}>All Recipes</NavLink></li>
-        <li className='font-semibold'><NavLink to={'/addRecipe'} className={({ isActive }) => isActive ? 'border border-green-600 rounded text-green-600 font-bold  ' : ' hover:border-green-600 hover:border hover:text-green-600'}>Add Recipe</NavLink></li>
+        <li className='font-semibold'><NavLink to={'/'} className={({ isActive }) => isActive ? 'border border-green-600 rounded text-gray-300 font-bold  ' : 'hover:bg-transparent hover:text-gray-300  text-green-600'}>Home</NavLink></li>
+        <li className='font-semibold'><NavLink to={'/allRecipes'} className={({ isActive }) => isActive ? 'border border-green-600 rounded text-gray-300 font-bold  ' : 'hover:bg-transparent hover:text-gray-300 text-green-600'}>All Recipes</NavLink></li>
+        <li className='font-semibold'><NavLink to={'/addRecipe'} className={({ isActive }) => isActive ? 'border border-green-600 rounded text-gray-300 font-bold  ' : 'hover:bg-transparent hover:text-gray-300 text-green-600'}>Add Recipe</NavLink></li>
         {
-            user ? <><li className='font-semibold'><NavLink to={'/myRecipes'} className={({ isActive }) => isActive ? 'border border-green-600 rounded text-green-600 font-bold  ' : ' hover:border-green-600 hover:border hover:text-green-600'}>My Recipes</NavLink></li> </>: ""
+            user ? <><li className='font-semibold'><NavLink to={'/myRecipes'} className={({ isActive }) => isActive ? 'border border-green-600 rounded text-gray-300 font-bold  ' : 'hover:bg-transparent hover:text-gray-300 text-green-600'}>My Recipes</NavLink></li> </>: ""
         }
-        <li className='font-semibold'><NavLink to={'/aboutUs'} className={({ isActive }) => isActive ? 'border border-green-600 rounded text-green-600 font-bold  ' : ' hover:border-green-600 hover:border hover:text-green-600'}>About</NavLink></li>
+        <li className='font-semibold'><NavLink to={'/aboutUs'} className={({ isActive }) => isActive ? 'border border-green-600 rounded text-gray-300 font-bold  ' : 'hover:bg-transparent hover:text-gray-300 text-green-600'}>About</NavLink></li>
 
     </>
 
     return (
-        <div className="navbar backdrop-blur-sm sticky z-50 top-0 w-11/12 mx-auto">
+        <div className="navbar backdrop-blur-sm sticky  text-gray-300 z-50 top-0 w-11/12 mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

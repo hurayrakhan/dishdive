@@ -18,7 +18,7 @@ import { Link } from 'react-router';
 
 const Hero = () => {
     return (
-            <div className=' h-[calc(100vh-140px)] overflow-hidden -m-top-16'>
+            <div className=' overflow-hidden -m-top-16'>
                 <Swiper
                     style={{
                         '--swiper-navigation-color': '#fff',

@@ -46,11 +46,11 @@ const AllRecipes = () => {
                 <div className="max-w-10/12 mx-auto">
                     <h1 className="text-5xl font-bold text-center text-gray-800 mb-14">All Recipes</h1>
 
-                    <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-10">
+                    <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {recipes.map((recipe) => (
                             <Fade key={recipe._id}>
                                 <div
-                                    className="relative bg-white rounded-3xl border border-gray-200 group overflow-hidden shadow-lg hover:shadow-blue-400 transition-all duration-500"
+                                    className="relative bg-white h-[380px] rounded-3xl border border-gray-200 group overflow-hidden shadow-lg hover:shadow-blue-400 transition-all duration-500"
                                 >
                                     {/* Image */}
                                     <div className="overflow-hidden">
