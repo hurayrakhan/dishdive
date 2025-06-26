@@ -18,10 +18,7 @@ import { Link } from 'react-router';
 
 const Hero = () => {
     return (
-        <div className=''>
-
-            {/* swiper container */}
-            <div className=''>
+            <div className=' h-[calc(100vh-140px)] overflow-hidden -m-top-16'>
                 <Swiper
                     style={{
                         '--swiper-navigation-color': '#fff',
@@ -45,7 +42,7 @@ const Hero = () => {
 
                     <SwiperSlide
                         style={{ backgroundImage: `url(${slider1})` }}
-                        className="bg-cover bg-no-repeat h-[600px] relative"
+                        className="bg-cover bg-no-repeat  relative"
                     >
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/40 text-center px-4">
                             <h1 className=" text-5xl text-gray-300 font-bold mb-2 opacity-70" data-swiper-parallax="-300">
@@ -63,7 +60,7 @@ const Hero = () => {
 
                     <SwiperSlide
                         style={{ backgroundImage: `url(${slider2})` }}
-                        className="bg-cover bg-no-repeat h-[600px] relative"
+                        className="bg-cover bg-no-repeat  relative"
                     >
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/40 text-center px-4">
                             <h1 className=" text-5xl text-gray-300 font-bold mb-2 opacity-70" data-swiper-parallax="-300">
@@ -81,7 +78,7 @@ const Hero = () => {
                     </SwiperSlide>
                     <SwiperSlide
                         style={{ backgroundImage: `url(${slider3})` }}
-                        className="bg-cover bg-no-repeat h-[600px] relative"
+                        className="bg-cover bg-no-repeat  relative"
                     >
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/40 text-center px-4">
                             <h1 className=" text-5xl text-gray-300 font-bold mb-2 opacity-70" data-swiper-parallax="-300">
@@ -98,7 +95,7 @@ const Hero = () => {
                     </SwiperSlide>
                     <SwiperSlide
                         style={{ backgroundImage: `url(${slider4})` }}
-                        className="bg-cover bg-no-repeat h-[600px] relative"
+                        className="bg-cover bg-no-repeat  relative"
                     >
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/40 text-center px-4">
                             <h1 className=" text-5xl text-gray-300 font-bold mb-2 opacity-70" data-swiper-parallax="-300">
@@ -116,7 +113,7 @@ const Hero = () => {
 
                 </Swiper>
             </div>
-        </div>
+        
     );
 };
 

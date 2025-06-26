@@ -7,11 +7,11 @@ import UpcomingRecipes from '../Components/UpcomingRecipes';
 
 const HomePage = () => {
     return (
-        <div className='relative'>
-            <div className='absolute z-20 w-full'>
+        <div className=''>
+            <div className='sticky backdrop-blur-sm text-gray-300 top-0  z-50 w-full'>
                 <Header></Header>
             </div>
-            <div className=''>
+            <div className='-mt-16'>
                 <Hero></Hero>
             </div>
             <TopRecipes></TopRecipes>
