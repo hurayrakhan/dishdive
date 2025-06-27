@@ -149,7 +149,7 @@ const Header = ({ children }) => {
                         {links}
                     </ul> : <ul className="flex-grow space-y-6 text-lg text-gray-700">
                         {links}
-                        </ul>
+                    </ul>
                     }
 
 
@@ -208,7 +208,7 @@ const Header = ({ children }) => {
                 <div className="navbar backdrop-blur-sm sticky top-0 z-40 w-full bg-white/30 border-b border-gray-200">
                     <div className="navbar-start flex items-center gap-2 px-4">
                         <div
-                            className={`flex items-center gap-2 cursor-pointer ${sidebarOpen? 'hidden' : ''}`}
+                            className={`flex items-center gap-2 cursor-pointer ${sidebarOpen ? 'hidden' : ''}`}
                             onClick={() => setSidebarOpen(true)}
                         >
                             <img src={logo} alt="DishDive Logo" className="h-10 w-auto" />
@@ -226,8 +226,8 @@ const Header = ({ children }) => {
                     <div className="navbar-end flex items-center gap-2 px-4">
                         {/* Uncomment below if you want mode changer here */}
                         {/* <div className='hidden md:block'>
-              <ModeChanger />
-            </div> */}
+                        <ModeChanger />
+                        </div> */}
 
                         {user ? (
                             <>
