@@ -14,6 +14,7 @@ import PrivateRouter from "./PrivateRouter";
 import Profile from "../pages/Profile";
 import { Suspense } from "react";
 import Dashboard from "../pages/Dashboard";
+import BlogDetail from "../Components/BlogDetails";
 
 
 const router = createBrowserRouter([
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
             {
                 path: '/dashboard',
                 element: <PrivateRouter><Dashboard></Dashboard></PrivateRouter>
+            },
+            {
+                path: 'blog/:id',
+                element: <BlogDetail></BlogDetail>
             }
         ]
     },
