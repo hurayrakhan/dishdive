@@ -89,7 +89,7 @@ const Login = () => {
                             <label className="label text-white">Email</label>
                             <input type="email" className="input w-full bg-white text-black" name='email' required placeholder="Email" />
                             <label className="label text-white">Password</label>
-                            <input type="password" className="input w-full bg-white text-black validator" required placeholder="Password" minLength="8"
+                            <input type="password" name='password' className="input w-full bg-white text-black validator" required placeholder="Password" minLength="8"
                                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
                                 title="Must be more than 6 characters, including number, lowercase letter, uppercase letter" />
                             <div><a className="link link-hover text-white">Forgot password?</a></div>
